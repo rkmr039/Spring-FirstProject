@@ -5,7 +5,6 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
 public class MockMailSender implements MailSender{
 	
 	private static Log log = LogFactory.getLog(MockMailSender.class);
