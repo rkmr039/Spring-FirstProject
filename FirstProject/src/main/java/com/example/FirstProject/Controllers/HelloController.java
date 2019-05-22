@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class HelloController {
 	
-	@Value("${app.name}")
-	private String appName;
+	
 	
 	@RequestMapping("/hello")
 	public String sayHello() {
-		return "Hello World " + appName;
+		return "Hello World ";
 	}
 
 }
