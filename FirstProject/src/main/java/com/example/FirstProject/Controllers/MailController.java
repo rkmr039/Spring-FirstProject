@@ -1,5 +1,7 @@
 package com.example.FirstProject.Controllers;
 
+import javax.mail.MessagingException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +21,8 @@ public class MailController {
 
 
 	@RequestMapping("/mail")
-	public String mail() {
-		mailSender.send("mail@example.com","A Test Mail from Spring","Body of th email");
+	public String mail() throws MessagingException {
+		mailSender.send("rishabkumar039@example.com","A Test Mail from Spring","Body of th email");
 		return "Mail Send";
 	}
 }
